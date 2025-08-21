@@ -1,0 +1,8 @@
+llm:
+  api_type: "github_copilot"
+  # No API key needed - GitHub Copilot uses OAuth2 authentication
+  model: "gpt-5-mini"  # Available models: gpt-4o, gpt-4.1, gpt-5-mini, gpt-5 (github_copilot/ prefix added automatically)
+  temperature: 0.0
+  calc_usage: true
+  timeout: 600
+  # Note: Uses LiteLLM for GitHub Copilot integration with OAuth2 authentication

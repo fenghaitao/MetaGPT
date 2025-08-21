@@ -328,6 +328,11 @@ TOKEN_MAX = {
     "qwen2.5-72b-instruct": 131072,
     "qwen2.5-32b-instruct": 131072,
     "qwen2.5-14b-instruct": 131072,
+    # GitHub Copilot models (via LiteLLM) - Only supported models
+    "github_copilot/gpt-4o": 128000,
+    "github_copilot/gpt-4.1": 1000000,
+    "github_copilot/gpt-5": 400000,
+    "github_copilot/gpt-5-mini": 32000,
     "qwen2.5-7b-instruct": 131072,
     "qwen2.5-3b-instruct": 32768,
     "qwen2.5-1.5b-instruct": 32768,
