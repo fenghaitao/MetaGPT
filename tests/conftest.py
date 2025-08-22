@@ -14,7 +14,7 @@ import re
 import uuid
 from typing import Callable
 
-import aiohttp.web
+# import aiohttp.web
 import pytest
 
 from metagpt.const import DEFAULT_WORKSPACE_ROOT, TEST_DATA_PATH

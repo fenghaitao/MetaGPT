@@ -4,7 +4,7 @@
 import os
 from pathlib import Path
 
-from loguru import logger
+# from loguru import logger
 
 import metagpt
 
@@ -12,7 +12,7 @@ import metagpt
 def get_metagpt_package_root():
     """Get the root directory of the installed package."""
     package_root = Path(metagpt.__file__).parent.parent
-    logger.info(f"Package root set to {str(package_root)}")
+    # logger.info(f"Package root set to {str(package_root)}")
     return package_root
 
 
@@ -22,7 +22,7 @@ def get_metagpt_root():
     project_root_env = os.getenv("METAGPT_PROJECT_ROOT")
     if project_root_env:
         project_root = Path(project_root_env)
-        logger.info(f"PROJECT_ROOT set from environment variable to {str(project_root)}")
+        # logger.info(f"PROJECT_ROOT set from environment variable to {str(project_root)}")
     else:
         # Fallback to package root if no environment variable is set
         project_root = get_metagpt_package_root()
